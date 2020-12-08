@@ -9,11 +9,11 @@
 simple한 rtsp-stream 오픈소스
 
 ## Table of contents
-* [How does it work](#작동원리)
-* [Run with Docker](#실행법)
-* [Easy API](#api사용법)
-* [Authentication](#인가)
-    * [JWT](#jwt-인가)
+* [작동원리](#How does it work)
+* [Docker를 이용한 사용법](#Run with Docker)
+* [API 사용법](#Easy API)
+* [인가](#Authentication)
+    * [JWT](#JWT)
 * [Configuration](#configuration)
 * [UI](#ui)
 * [Debug](#debug)
@@ -22,9 +22,9 @@ simple한 rtsp-stream 오픈소스
 
 ## How does it work
 
-The application converts raw `RTSP` streams into `HLS`.<br/>
-The goal is make raw RTSP streams easily playable in browsers using HLS.
-
+해당 소스는 RTSP -> HLS 서버를 구축 하기 위한 소스코드 입니다.<br/>
+RTSP ㅌ .
+ㅅ
 <p align="center">
   <img src="https://i.imgur.com/02X4uCX.png">
 </p>
