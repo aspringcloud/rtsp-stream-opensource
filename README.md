@@ -6,14 +6,14 @@
  ![GitHub last commit](https://img.shields.io/github/last-commit/Roverr/rtsp-stream.svg)
  ![GitHub release](https://img.shields.io/github/release/Roverr/rtsp-stream.svg)
 
-rtsp-stream is an easy to use, out of box solution that can be integrated into existing systems resolving the problem of not being able to play raw rtsp stream natively in browsers. 
+simple한 rtsp-stream 오픈소스
 
 ## Table of contents
-* [How does it work](#how-does-it-work)
-* [Run with Docker](#run-with-docker)
-* [Easy API](#easy-api)
-* [Authentication](#authentication)
-    * [JWT](#jwt-authentication)
+* [How does it work](#작동원리)
+* [Run with Docker](#실행법)
+* [Easy API](#api사용법)
+* [Authentication](#인가)
+    * [JWT](#jwt-인가)
 * [Configuration](#configuration)
 * [UI](#ui)
 * [Debug](#debug)
