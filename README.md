@@ -23,12 +23,13 @@ simple한 rtsp-stream 오픈소스
 ## How does it work
 
 해당 소스는 RTSP -> HLS 서버를 구축 하기 위한 소스코드 입니다.<br/>
-RTSP ㅌ .
-ㅅ
+RTSP를 통해 HLS에서 분리된 동영상 파일을 web에 표출 .
+
 <p align="center">
   <img src="https://i.imgur.com/02X4uCX.png">
 </p>
 
+트랜스코딩 관련 설명인데 잘 모르겠습니다.
 **Supports transcoding based on traffic**<br/>
 The idea behind this is that it should not transcode anything until someone is actually watching the stream. This can help with network bottlenecks in systems where there are a lot of cameras installed.<br/>
 There is a running go routine in the background that checks if a stream is being active or not. If it's not active anymore, the transcoding stops until the next request for that stream.
@@ -37,10 +38,7 @@ This functionality is configurable though so you can use it as a normal transcod
 
 ## Run with Docker
 
-Why should you use it with Docker?<br/>
-Because the application relies on ffmpeg heavily therefore ensuring the environment is much easier with docker as everything comes with the image and you do not have to install anything besides docker. Other than installation, this way we can also avoid compatibility issues between operating systems.
-
-The application has an offical [Docker repository](https://hub.docker.com/r/roverr/rtsp-stream/) at Dockerhub, therefore you can easily run it with simple commands:
+Docker를 이용한 실행 방법<br/>
 
 ```s
 docker run -p 80:8080 roverr/rtsp-stream:2
